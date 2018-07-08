@@ -3,7 +3,7 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Gianluca Fiore -- main developer -- @Gianlucadfiore
 
 # THANKS
 
