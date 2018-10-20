@@ -106,10 +106,9 @@ Microsoft Ajax Content Delivery Network:
 
 ### Further reading about DNS prefetching
 
-* https://developer.mozilla.org/en-US/docs/Controlling_DNS_prefetching
+* https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-DNS-Prefetch-Control
 * https://dev.chromium.org/developers/design-documents/dns-prefetching
 * https://blogs.msdn.microsoft.com/ie/2011/03/17/internet-explorer-9-network-performance-improvements/
-* http://dayofjs.com/videos/22158462/web-browsers_alex-russel
 
 
 ## Google Universal Analytics
@@ -125,7 +124,7 @@ ga('create', 'UA-XXXXX-X', 'auto'); ga('send', 'pageview');
 ```
 
 To customize further, see Google's [Advanced
-Setup](https://developers.google.com/analytics/devguides/collection/analyticsjs/advanced),
+Setup](https://developers.google.com/analytics/devguides/collection/analyticsjs/),
 [Pageview](https://developers.google.com/analytics/devguides/collection/analyticsjs/pages),
 and [Event](https://developers.google.com/analytics/devguides/collection/analyticsjs/events) Docs.
 
@@ -220,7 +219,7 @@ $(function(){
 Enabling your application for pinning will allow IE9 users to add it to their
 Windows Taskbar and Start Menu. This comes with a range of new tools that you
 can easily configure with the elements below. See more [documentation on IE9
-Pinned Sites](https://msdn.microsoft.com/en-us/library/gg131029.aspx).
+Pinned Sites](https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/).
 
 ### Name the Pinned Site for Windows
 
@@ -304,7 +303,7 @@ even when your app isn't actively running. The badge's value can be a number,
 or one of a predefined list of glyphs.
 
 * [Tutorial on IEBlog with link to badge XML schema](https://blogs.msdn.microsoft.com/ie/2012/04/03/pinned-sites-in-windows-8/)
-* [Available badge values](https://msdn.microsoft.com/en-us/library/ie/br212849.aspx)
+* [Available badge values](https://docs.microsoft.com/en-us/uwp/schemas/tiles/badgeschema/element-badge)
 
 ```html
 <meta name="msapplication-badge" value="frequency=NUMBER_IN_MINUTES;polling-uri=https://www.example.com/path/to/file.xml">
@@ -379,13 +378,13 @@ plugin](https://www.google.com/search?ie=UTF-8&q=how+to+make+browser+search+plug
 
 * If you want to disable the translation prompt in Chrome or block Google
   Translate from translating your web page, use [`<meta name="google"
-  value="notranslate">`](https://support.google.com/translate/?hl=en#2641276).
+  content="notranslate">`](https://support.google.com/webmasters/answer/79812).
   To disable translation for a particular section of the web page, add
   [`class="notranslate"`](https://support.google.com/translate/?hl=en#2641276).
 
 * If you want to disable the automatic detection and formatting of possible
   phone numbers in Safari on iOS, use [`<meta name="format-detection"
-  content="telephone=no">`](https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html/#//apple_ref/doc/uid/TP40008193-SW5).
+  content="telephone=no">`](https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html).
 
 * Avoid development/stage websites "leaking" into SERPs (search engine results
   page) by [implementing X-Robots-tag
@@ -423,7 +422,7 @@ attribute should contain the location of your pingback service.
 ```
 
 * High-level explanation: https://codex.wordpress.org/Introduction_to_Blogging#Pingbacks
-* Step-by-step example case: http://www.hixie.ch/specs/pingback/pingback-1.0#TOC5
+* Step-by-step example case: https://www.hixie.ch/specs/pingback/pingback-1.0#TOC5
 * PHP pingback service: https://web.archive.org/web/20131211032834/http://blog.perplexedlabs.com/2009/07/15/xmlrpc-pingbacks-using-php/
 
 
@@ -436,10 +435,10 @@ You can control the information that Facebook and others display when users
 share your site. Below are just the most basic data points you might need. For
 specific content types (including "website"), see [Facebook's built-in Open
 Graph content
-templates](https://developers.facebook.com/docs/opengraph/objects/builtin/).
+templates](https://developers.facebook.com/docs/sharing/opengraph/using-objects).
 Take full advantage of Facebook's support for complex data and activity by
 following the [Open Graph
-tutorial](https://developers.facebook.com/docs/opengraph/tutorial/).
+tutorial](https://developers.facebook.com/docs/sharing/webmasters/getting-started).
 
 For a reference of Open Graph's markup and properties, you may check
 [Facebook's Open Graph Protocol reference](http://ogp.me/). Finally,
@@ -465,7 +464,7 @@ Graph. In fact, Twitter will use Open Graph when Cards is not available. Note
 that, as of this writing, Twitter requires that app developers activate Cards
 on a per-domain basis. You can read more about the various snippet formats
 and application process in the [official Twitter Cards
-documentation](https://dev.twitter.com/docs/cards), and you can validate
+documentation](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/abouts-cards), and you can validate
 your markup with the [Card validator](https://cards-dev.twitter.com/validator)
 (needs registration to Twitter).
 
@@ -549,8 +548,7 @@ This can be done by adding the following annotations in your HTML pages:
 
 For more information please see:
 
-* https://developers.google.com/webmasters/smartphone-sites/details#separateurls
-* https://developers.google.com/webmasters/smartphone-sites/feature-phones
+* https://developers.google.com/search/mobile-sites/mobile-seo/separate-urls
 
 
 ## Web Apps
